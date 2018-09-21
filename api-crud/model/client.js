@@ -1,9 +1,9 @@
 'use strict'
-const mongoose = require('mongoose')
+const mongoose = require('mongoose') //Importar o mongoose
 
-class Client{
+class Client{ 
     constructor(){
-        mongoose.model('Client', {
+        mongoose.model('Client', { //Criar um modelo do mongoose chamado Client
             nome: String,
             cpf: String,
             senha: String
@@ -11,4 +11,4 @@ class Client{
     }
 }
 
-module.exports = Client;
+module.exports = Client; //Exportar a classe co mseu constructor
